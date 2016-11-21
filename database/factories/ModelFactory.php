@@ -26,7 +26,7 @@ $factory->define(User::class, function(Generator $faker){
 		'name'=>$faker->firstName($gender = 'male'|'female'),
 		'email'=>$faker->email,
             'password'=>bcrypt('secret'),
-            'type'=> $faker->randomElement($array = array ('Admin','Profesor','Coordinador','Grupo','Administrativo')),
+            'type'=> $faker->randomElement($array = array ('Profesor','Coordinador','Grupo','Administrativo')),
 		];
 
 });

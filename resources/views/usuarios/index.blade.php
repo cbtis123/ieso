@@ -19,8 +19,19 @@
           <tr>
             <td>{{$usuario->name}}</td>
             <td>{{$usuario->email}}</td>
-            <td>{{$usuario->type}}</td>
-
+            <td>
+              @if($usuario->type == "Admin")
+                <span class="label label-default">{{$usuario->type}}</span>
+              @elseif($usuario->type == "Coordinador")
+                <span class="label label-success">{{$usuario->type}}</span>
+              @elseif($usuario->type == "Administrativo")
+                <span class="label label-success">{{$usuario->type}}</span>
+              @elseif($usuario->type == "Profesor")
+                <span class="label label-primary">{{$usuario->type}}</span>
+              @elseif($usuario->type == "Grupo")
+                <span class="label label-info">{{$usuario->type}}</span>
+              @endif
+            </td>
             <td>
               <a href="{{route('usuarios.edit',$usuario)}}" class="btn btn-warning"><span class="glyphicon glyphicon-wrench"></span> </a>
             </td>

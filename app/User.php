@@ -41,5 +41,7 @@ class User extends Authenticatable
        return $this->hasOne('App\Profesor');
     }
 
-
+    public function tipo(){
+        return $this->type;
+    }
 }

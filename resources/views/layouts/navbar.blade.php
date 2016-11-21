@@ -24,7 +24,7 @@
 				  	<li><a href="{{ url('/grupos') }}"><i class="fa fa-book" aria-hidden="true"></i> Grupos</a></li>
 				  	<li><a href="{{ url('/calificaciones') }}"><i class="fa fa-book" aria-hidden="true"></i> Califiaciones</a></li>
 				  </ul>
-
+				</li>	
 
 			  <li><a href="{{ url('/tutores') }}"><i class="fa fa-users" aria-hidden="true"></i> Tutores</a></li>
 			  <li><a href="{{ url('/horarios') }}"><i class="fa fa-clock-o" aria-hidden="true"></i> Horarios</a></li>

@@ -17,17 +17,30 @@ Route::get('/', function () {
 
 Route::group(['middleware' => 'auth'], function () {
     //
-    Route::resource('tutores','TutoresController');
-	Route::resource('alumnos','AlumnosController');
-	Route::resource('calificaciones','CalificacionesController');
-	Route::resource('materias','MateriasController');
-	Route::resource('grupos','GruposController');
-	Route::resource('profesores','ProfesoresController');
-	Route::resource('aulas','AulasController');
-	Route::resource('horarios','HorariosController');
-	Route::resource('licenciaturas','LicenciaturasController');
-	Route::resource('coordinadores','CoordinadoresController');
-	Route::resource('usuarios','UsuariosController');
+    Route::group(['middleware' => 'admin'], function () {
+    	Route::resource('aulas','AulasController');
+		Route::resource('licenciaturas','LicenciaturasController');
+		Route::resource('coordinadores','CoordinadoresController');
+		Route::resource('materias','MateriasController');
+    });
+
+    Route::group(['middleware' => 'administrativo'], function () {
+    	Route::resource('tutores','TutoresController');
+		Route::resource('alumnos','AlumnosController');
+    });
+
+    
+    Route::group(['middleware' => 'coordinador'], function () {
+    	Route::resource('usuarios','UsuariosController');
+		Route::resource('grupos','GruposController');
+		Route::resource('profesores','ProfesoresController');
+	});
+
+    
+	Route::group(['middleware' => ['profesor']], function () {
+		Route::resource('calificaciones','CalificacionesController');
+		Route::resource('horarios','HorariosController');
+	});
 });
 
 
