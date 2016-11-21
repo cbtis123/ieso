@@ -16,8 +16,8 @@ class Materia extends Model
      
     
      //Se declara relacion muchos a muchos con Especialidades "Una Materia puede tener muchas especialidades" 
-    public function especialidades(){
-    	return $this->belongsToMany('App\Aula');
+    public function licenciaturas(){
+    	return $this->belongsToMany('App\Licenciatura');
     }
 
     //Se declara la relacion uno a muchos con horarios "Una materia puede tener muchos horarios"

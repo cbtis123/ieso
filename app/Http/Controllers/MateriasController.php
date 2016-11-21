@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Materia;
+use App\Licenciatura;
 use App\Http\Requests;
 use App\Http\Requests\MateriaRequest;
 
@@ -26,8 +27,10 @@ class MateriasController extends Controller
     {
         //Se crea un objeto vacio del modelo materia
         $materia= new Materia;
+
+        $licenciaturas= Licenciatura::orderBy('nombre','ASC')->pluck('nombre','id');
         //Se manda a llamar la vista create y le pasamos el objeto vacio que creamos con el modelo materia
-        return view('materias.create')->with('materia',$materia);
+        return view('materias.create')->with('materia',$materia)->with('licenciaturas',$licenciaturas);
     }
 
     /**
@@ -42,6 +45,14 @@ class MateriasController extends Controller
         $materia = new Materia($request->all());
         //Mandamos a guaradar la nueva materia creada
         $materia->save();
+        /*Relacionamos la materia con la licenciatura y el cuatrimestre 
+        $syncData = array();
+        foreach($request->licenciatura_id as $id => $licenciatura){
+        $syncData[$id] = array('licenciatura_id' => $licenciatura, 'cuatrimestre' => $request->cuatrimestre );
+        }
+        */
+        //Rellenamos la tabla licenciaturas_materias
+        $materia->licenciaturas()->sync($request->licenciatura_id);
         //Mandamos un mensaje de registro exitoso
         flash('Se ha registrado la Materia '.$materia->nombre.' con exito!!','success');
         //Redireccionamos al index
@@ -67,10 +78,11 @@ class MateriasController extends Controller
      */
     public function edit($id)
     {
+        $licenciaturas= Licenciatura::orderBy('nombre','ASC')->pluck('nombre','id');
         //Buscamos la materia que queremos modificar con el modelo materia y con el parametro ID que rescibimos
         $materia = materia::find($id);
         //Mandamos a llamar la vista edit y le mandamos la materia que extragimos de la base mediante el model materia
-        return view('materias.edit')->with('materia',$materia);
+        return view('materias.edit')->with('materia',$materia)->with('licenciaturas',$licenciaturas);
     }
 
     /**

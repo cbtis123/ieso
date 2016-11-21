@@ -16,12 +16,71 @@ class CreateMateriasTable extends Migration
         Schema::create('materias', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre');
+            $table->enum('cuatrimestre',['1','2','3','4','5','6','7','8','9','10']);
             $table->timestamps();
         });
 
         DB::table('materias')->insert([
+          //>>>>>>>ING. EN SISTEMAS<<<<<<<<<
+    //1° CUATRIMESTRE SISTEMAS
+    ['nombre' => 'Diseño estructurado de algoritmos','cuatrimestre' => '1'],
+    ['nombre' => 'Contabilidad','cuatrimestre' => '1'],
+    ['nombre' => 'Introducción a las ciencias computacionales','cuatrimestre' => '1'],
+    //2 CUATRIMESTRE SISTEMAS
+    ['nombre' => 'Programación I','cuatrimestre' => '2'],
+    ['nombre' => 'Matemáticas discretas','cuatrimestre' => '2'],
+    ['nombre' => 'Administración','cuatrimestre' => '2'],
+    ['nombre' => 'Electromecanica basica','cuatrimestre' => '2'],
+    //3° CUATRIMESTRE SISTEMAS
+    ['nombre' => 'Programación II','cuatrimestre' => '3'],
+    ['nombre' => 'Matemáticas III','cuatrimestre' => '3'],
+    ['nombre' => 'Administración de recursos humanos','cuatrimestre' => '3'],
+    ['nombre' => 'Estructura de datos I','cuatrimestre' => '3'],
+    ['nombre' => 'Arquitectura de computadoras','cuatrimestre' => '3'],
+    //4° CUATRIMESTRE SISTEMAS
+    ['nombre' => 'Programación orientada a objetos','cuatrimestre' => '4'],
+    ['nombre' => 'Matemáticas IV','cuatrimestre' => '4'],
+    ['nombre' => 'Estructura de datos II','cuatrimestre' => '4'],
+    ['nombre' => 'Investigación de operaciones I','cuatrimestre' => '4'],
+    //5° CUATRIMESTRE SISTEMAS
+    ['nombre' => 'Análisis y diseño de sistemas de información I','cuatrimestre' => '5'],
+    ['nombre' => 'Estadística y probabilidad','cuatrimestre' => '5'],
+    ['nombre' => 'Fundamentos básicos de administración','cuatrimestre' => '5'],
+    ['nombre' => 'Base de datos I','cuatrimestre' => '5'],
+    ['nombre' => 'Investigación de operaciones II','cuatrimestre' => '5'],
+    ['nombre' => 'Inglés V','cuatrimestre' => '5'],
+    //6 CUATRIMESTRE SISTEMAS
+    ['nombre' => 'Análisis y diseño de sistemas de información II','cuatrimestre' => '6'],
+    ['nombre' => 'Métodos numéricos','cuatrimestre' => '6'],
+    ['nombre' => 'Ingeniería económica','cuatrimestre' => '6'],
+    ['nombre' => 'Base de datos II','cuatrimestre' => '6'],
+    ['nombre' => 'Redes de computadoras I','cuatrimestre' => '6'],
+    ['nombre' => 'Inglés VI','cuatrimestre' => '6'],
+    //7 CUATRIMESTRE SISTEMAS
+    ['nombre' => 'Ingeniería de software I','cuatrimestre' => '7'],
+    ['nombre' => 'Software de sistemas','cuatrimestre' => '7'],
+    ['nombre' => 'Administración de la función informática','cuatrimestre' => '7'],
+    ['nombre' => 'Sistemas operativos','cuatrimestre' => '7'],
+    ['nombre' => 'Redes de computadoras II','cuatrimestre' => '7'],
+    ['nombre' => 'Inglés técnico I','cuatrimestre' => '7'],
+    //8 CUATRIMESTRE SISTEMAS
+    ['nombre' => 'Ingeniería de software II','cuatrimestre' => '8'],
+    ['nombre' => 'Sistemas cliente servidor y para internet','cuatrimestre' => '8'],
+    ['nombre' => 'Bases de datos distribuidas','cuatrimestre' => '8'],
+    ['nombre' => 'Simulación','cuatrimestre' => '8'],
+    ['nombre' => 'Sistemas abiertos','cuatrimestre' => '8'],
+    ['nombre' => 'Inglés técnico II','cuatrimestre' => '8'],
+    //9 CUATRIMESTRE SISTEMAS
+    ['nombre' => 'Comercio electrónico','cuatrimestre' => '9'],
+    ['nombre' => 'Auditoria de sistemas','cuatrimestre' => '9'],
+    ['nombre' => 'Administración de bases de datos','cuatrimestre' => '9'],
+    ['nombre' => 'Inteligencia artificial','cuatrimestre' => '9'],
+    ['nombre' => 'Robótica','cuatrimestre' => '9'],
+    ['nombre' => 'Inglés técnico III','cuatrimestre' => '9'],
+    
+    /*Falta agregareles el cautrimestre
     //MATERIAS GENERALES
-    ['nombre' => 'Administracion I'],
+    ['nombre' => 'Administracion I','cuatrimestre'=>'1'],
     ['nombre' => 'Administracion II'],
     ['nombre' => 'Administracion III'],
     ['nombre' => 'Administración de recursos humanos I'],
@@ -68,64 +127,12 @@ class CreateMateriasTable extends Migration
     ['nombre' => 'Relaciones públicas'],
     ['nombre' => 'Seminario de tesis I'],
     ['nombre' => 'Seminario de tesis II'],
+    */
 
-    //>>>>>>>ING. EN SISTEMAS<<<<<<<<<
-    //1° CUATRIMESTRE SISTEMAS
-    ['nombre' => 'Diseño estructurado de algoritmos'],
-    ['nombre' => 'Contabilidad'],
-    ['nombre' => 'Introducción a las ciencias computacionales'],
-    //2 CUATRIMESTRE SISTEMAS
-    ['nombre' => 'Programación I'],
-    ['nombre' => 'Matemáticas discretas'],
-    ['nombre' => 'Administración'],
-    ['nombre' => 'Electromecanica basica'],
-    //3° CUATRIMESTRE SISTEMAS
-    ['nombre' => 'Programación II'],
-    ['nombre' => 'Matemáticas III'],
-    ['nombre' => 'Administración de recursos humanos'],
-    ['nombre' => 'Estructura de datos I'],
-    ['nombre' => 'Arquitectura de computadoras'],
-    //4° CUATRIMESTRE SISTEMAS
-    ['nombre' => 'Programación orientada a objetos'],
-    ['nombre' => 'Matemáticas IV'],
-    ['nombre' => 'Estructura de datos II'],
-    ['nombre' => 'Investigación de operaciones I'],
-    //5° CUATRIMESTRE SISTEMAS
-    ['nombre' => 'Análisis y diseño de sistemas de información I'],
-    ['nombre' => 'Estadística y probabilidad'],
-    ['nombre' => 'Fundamentos básicos de administración'],
-    ['nombre' => 'Base de datos I'],
-    ['nombre' => 'Investigación de operaciones II'],
-    ['nombre' => 'Inglés V'],
-    //6 CUATRIMESTRE SISTEMAS
-    ['nombre' => 'Análisis y diseño de sistemas de información II'],
-    ['nombre' => 'Métodos numéricos'],
-    ['nombre' => 'Ingeniería económica'],
-    ['nombre' => 'Base de datos II'],
-    ['nombre' => 'Redes de computadoras I'],
-    ['nombre' => 'Inglés VI'],
-    //7 CUATRIMESTRE SISTEMAS
-    ['nombre' => 'Ingeniería de software I'],
-    ['nombre' => 'Software de sistemas'],
-    ['nombre' => 'Administración de la función informática'],
-    ['nombre' => 'Sistemas operativos'],
-    ['nombre' => 'Redes de computadoras II'],
-    ['nombre' => 'Inglés técnico I'],
-    //8 CUATRIMESTRE SISTEMAS
-    ['nombre' => 'Ingeniería de software II'],
-    ['nombre' => 'Sistemas cliente servidor y para internet'],
-    ['nombre' => 'Bases de datos distribuidas'],
-    ['nombre' => 'Simulación'],
-    ['nombre' => 'Sistemas abiertos'],
-    ['nombre' => 'Inglés técnico II'],
-    //9 CUATRIMESTRE SISTEMAS
-    ['nombre' => 'Comercio electrónico'],
-    ['nombre' => 'Auditoria de sistemas'],
-    ['nombre' => 'Administración de bases de datos'],
-    ['nombre' => 'Inteligencia artificial'],
-    ['nombre' => 'Robótica'],
-    ['nombre' => 'Inglés técnico III'],
+    
 
+
+    /*Falta agregarles el cuatrimestre
          //>>>>ADMINISTRACION<<<<<<
 
     //1°CUATRIMESTRE ADMINISTRACION
@@ -532,6 +539,7 @@ class CreateMateriasTable extends Migration
       ['nombre' => 'Seminario sobre métodos de investigación y asesoría de tesis II'],
       ['nombre' => 'Expresión artística II'],
       ['nombre' => 'Pedagogía monográfica II'],
+      */
 ]);
 
     }
