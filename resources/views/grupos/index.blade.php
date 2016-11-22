@@ -20,7 +20,7 @@
 
         @foreach ($grupos as $grupo)
           <tr>
-            <td>{{$grupo->nombre}}</td>
+            <td><a href="{{route('grupos.show',$grupo)}}">{{$grupo->nombre}}</a></td>
             <td>{{$grupo->licenciatura->nombre}}</td>
             <td>{{$grupo->cuatrimestre}}</td>
             <td>{{$grupo->turno}}</td>

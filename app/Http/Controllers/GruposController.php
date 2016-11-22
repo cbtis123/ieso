@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Grupo;
+use App\Alumno;
 use App\Licenciatura;
 use App\Profesor;
 use App\Http\Requests;
@@ -61,6 +62,9 @@ class GruposController extends Controller
     public function show($id)
     {
         //
+        $alumnos = Alumno::where('grupo_id','=',"$id")->get();
+        $grupo = Grupo::find($id);
+        return view('grupos.show')->with('alumnos',$alumnos)->with('grupo',$grupo);
     }
 
     /**

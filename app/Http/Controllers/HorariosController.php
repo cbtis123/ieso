@@ -79,8 +79,12 @@ class HorariosController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        //
+    {   
+        $grupo= Grupo::find($id);
+        ////Se manda a llamar todas las horarios que existen en la tabla 'horarios' mediante el modelo horario
+        $horarios= Horario::GrupoHorario($id);
+        //Se manda a llamar la vista index y le pasamos la lista de usuarios que obtuvimos mediante el modelo horario
+        return view('horarios.show')->with('horarios',$horarios)->with('grupo',$grupo);
     }
 
     /**
