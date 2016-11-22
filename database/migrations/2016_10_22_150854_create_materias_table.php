@@ -77,8 +77,416 @@ class CreateMateriasTable extends Migration
     ['nombre' => 'Inteligencia artificial','cuatrimestre' => '9'],
     ['nombre' => 'Robótica','cuatrimestre' => '9'],
     ['nombre' => 'Inglés técnico III','cuatrimestre' => '9'],
+  
     
-    /*Falta agregareles el cautrimestre
+
+
+          //>>>>ADMINISTRACION<<<<<<
+
+    //1°CUATRIMESTRE ADMINISTRACION
+    ['nombre' => 'Contabilidad básica','cuatrimestre' => '1'],
+    ['nombre' => 'Introducción al derecho','cuatrimestre' =>'1'],
+    ['nombre' => 'Matemáticas básicas','cuatrimestre'=>'1'],
+    //2°CUATRIMESTRE ADMINISTRACION
+    ['nombre' => 'Contabilidad financiera','cuatrimestre'=>'2'],
+    ['nombre' => 'Matemáticas para administración','cuatrimestre'=>'2'],
+    //3°CUATRIMESTRE ADMINISTRACION
+    ['nombre' => 'Contabilidad de costos','cuatrimestre'=>'3'],
+    ['nombre' => 'Matemáticas financieras','cuatrimestre'=>'3'],
+    //4° CUATRIMESTRE ADMINISTRACION
+    ['nombre' => 'Administración del factor humano I','cuatrimestre'=>'4'],
+    ['nombre' => 'Contabilidad para administración','cuatrimestre'=>'4'],
+    ['nombre' => 'Estadística','cuatrimestre'=>'4'],
+    ['nombre' => 'Economía de la empresa','cuatrimestre'=>'4'],
+    //5° CUATRIMESTRE ADMINISTRACION
+    ['nombre' => 'Administración del factor humano II','cuatrimestre'=>'5'],
+    ['nombre' => 'Lectura y redacción','cuatrimestre'=>'5'],
+    ['nombre' => 'Derecho privado I','cuatrimestre'=>'5'],
+    ['nombre' => 'Administración financiera I','cuatrimestre'=>'5'],
+    ['nombre' => 'Estadística para administración I','cuatrimestre'=>'5'],
+    ['nombre' => 'Seguridad social','cuatrimestre'=>'5'],
+    //6° CUATRIMESTRE ADMINISTRACION
+    ['nombre' => 'Psicología de las organizaciones','cuatrimestre'=>'6'],
+    ['nombre' => 'Derecho privado II','cuatrimestre'=>'9'],
+    ['nombre' => 'Marketing I','cuatrimestre'=>'9'],
+    ['nombre' => 'Administración financiera II','cuatrimestre'=>'9'],
+    ['nombre' => 'Estadística para administración II','cuatrimestre'=>'9'],
+    ['nombre' => 'Administración estratégica','cuatrimestre'=>'9'],
+    //7° CUATRIMESTRE ADMINISTRACION
+    ['nombre' => 'Derecho mercantil I','cuatrimestre'=>'7'],
+    ['nombre' => 'Comportamiento organizacional','cuatrimestre'=>'7'],
+    ['nombre' => 'Marketing II','cuatrimestre'=>'7'],
+    //8° CUATRIMESTRE ADMINISTRACION
+    ['nombre' => 'Derecho mercantil II','cuatrimestre'=>'8'],
+    ['nombre' => 'Administración de la producción','cuatrimestre'=>'8'],
+    ['nombre' => 'Liderazgo','cuatrimestre'=>'8'],
+    ['nombre' => 'Etica de las organizaciones','cuatrimestre'=>'8'],
+    //9° CUATRIMESTRE ADMINISTRACION
+    ['nombre' => 'Comercio internacional I','cuatrimestre'=>'9'],
+    ['nombre' => 'Elaboración de proyectos','cuatrimestre'=>'9'],
+    ['nombre' => 'Administración de la pequeña y mediana empresa','cuatrimestre'=>'9'],
+    ['nombre' => 'Administración de calidad','cuatrimestre'=>'9'],
+    //10° CUATRIMESTRE ADMINISTRACION
+    ['nombre' => 'Simulador de negocios','cuatrimestre'=>'10'],
+    ['nombre' => 'Evaluación de proyectos','cuatrimestre'=>'10'],
+    ['nombre' => 'Comercio internacional II','cuatrimestre'=>'10'],
+    ['nombre' => 'Logística','cuatrimestre'=>'10'],
+
+
+
+    //>>>>>CIENCIAS POLITICAS Y DERECHO<<<<<<
+    //1° CUATRIMESTRE CIENCIAS POLITICAS
+    ['nombre' => 'Introducción al estudio del derecho','cuatrimestre'=>'1'],
+    ['nombre' => 'Sociología jurídica','cuatrimestre'=>'1'],
+    ['nombre' => 'Procesos básicos del pensamiento','cuatrimestre'=>'1'],
+    ['nombre' => 'Matemáticas','cuatrimestre'=>'1'],
+    //2° CUATRIMESTRE CIENCIAS POLITICAS
+
+    //3° CUATRIMESTRE CIENCIAS POLITICAS
+    ['nombre' => 'Teoría del Estado','cuatrimestre'=>'3'],
+    ['nombre' => 'Estadística I','cuatrimestre'=>'3'],
+    ['nombre' => 'Informática III','cuatrimestre'=>'3'],
+    //4° CUATRIMESTRE CIENCIAS POLITICAS
+    ['nombre' => 'Estadística II','cuatrimestre'=>'4'],
+    ['nombre' => 'Sistemas políticos contemporáneos','cuatrimestre'=>'4'],
+    ['nombre' => 'Informática IV','cuatrimestre'=>'4'],
+    //5° CUATRIMESTRE CIENCIAS POLITICAS
+    ['nombre' => 'Garantías individuales y sociales','cuatrimestre'=>'5'],
+    ['nombre' => 'Derecho público','cuatrimestre'=>'5'],
+    ['nombre' => 'SSistema político mexicano','cuatrimestre'=>'5'],
+    ['nombre' => 'Razonamiento verbal para la toma de decisiones','cuatrimestre'=>'5'],
+    ['nombre' => 'Finanzas públicas I','cuatrimestre'=>'5'],
+    //6° CUATRIMESTRE CIENCIAS POLITICAS
+    ['nombre' => 'Derecho privado','cuatrimestre'=>'6'],
+    ['nombre' => 'Administración pública I','cuatrimestre'=>'6'],
+    ['nombre' => 'Ciencia política I','cuatrimestre'=>'6'],
+    ['nombre' => 'Liderazgo estratégico','cuatrimestre'=>'6'],
+    ['nombre' => 'Finanzas públicas II','cuatrimestre'=>'6'],
+    //7° CUATRIMESTRE CIENCIAS POLITICAS
+    ['nombre' => 'Derecho económico','cuatrimestre'=>'7'],
+    ['nombre' => 'Administración pública II','cuatrimestre'=>'7'],
+    ['nombre' => 'Ciencia política II','cuatrimestre'=>'7'],
+    ['nombre' => 'Comunicación','cuatrimestre'=>'7'],
+    ['nombre' => 'Expresión oral y escrita','cuatrimestre'=>'7'],
+    //8° CUATRIMESTRE CIENCIAS POLITICAS
+    ['nombre' => 'Derecho municipal','cuatrimestre'=>'8'],
+    ['nombre' => 'Política pública II','cuatrimestre'=>'8'],
+    //9° CUATRIMESTRE CIENCIAS POLITICAS
+    ['nombre' => 'Políticas públicas II','cuatrimestre'=>'9'],
+    ['nombre' => 'Derecho internacional público','cuatrimestre'=>'9'],
+    ['nombre' => 'Administración de recursos gubernamentales','cuatrimestre'=>'9'],
+    ['nombre' => 'Finanzas internacionales','cuatrimestre'=>'9'],
+    ['nombre' => 'Manejo de grupos','cuatrimestre'=>'9'],
+    //10° CUATRIMESTRE CIENCIAS POLITICAS
+    ['nombre' => 'Derecho internacional privado','cuatrimestre'=>'10'],
+    ['nombre' => 'Dinámica psicosocial','cuatrimestre'=>'10'],
+    ['nombre' => 'Auditoria gubernamental','cuatrimestre'=>'10'],
+    ['nombre' => 'Derecho electoral','cuatrimestre'=>'10'],
+    ['nombre' => 'Etica','cuatrimestre'=>'10'],
+
+
+
+    //>>>>>CONTADURIA<<<<<<
+    //1° CUATRIMESTRE CONTADURIA
+    ['nombre' => 'Contabilidad I','cuatrimestre'=>'1'],
+    //2° CUATRIMESTRE CONTADURIA
+    ['nombre' => 'Contabilidad II','cuatrimestre'=>'2'],
+    ['nombre' => 'Derecho constitucional y administrativo','cuatrimestre'=>'2'],
+    //3° CUATRIMESTRE CONTADURIA
+    ['nombre' => 'Contabilidad de costos I','cuatrimestre'=>'3'],
+    ['nombre' => 'Matemáticas financieras','cuatrimestre'=>'3'],
+    ['nombre' => 'Informática para contabilidad I','cuatrimestre'=>'3'],
+    //4° CUATRIMESTRE CONTADURIA
+    ['nombre' => 'Contabilidad de costos II','cuatrimestre'=>'4'],
+    ['nombre' => 'Derecho mercantil','cuatrimestre'=>'4'],
+    ['nombre' => 'Informática para contabilidad II','cuatrimestre'=>'4'],
+    //5° CUATRIMESTRE CONTADURIA
+    ['nombre' => 'Informática para contabilidad II','cuatrimestre'=>'5'],
+    ['nombre' => 'Derecho fiscal','cuatrimestre'=>'5'],
+    ['nombre' => 'Contabilidad superior','cuatrimestre'=>'5'],
+    //6° CUATRIMESTRE CONTADURIA
+    ['nombre' => 'Impuestos I','cuatrimestre'=>'6'],
+    ['nombre' => 'Liderazgo y gestión','cuatrimestre'=>'6'],
+    ['nombre' => 'Administración de las inversiones','cuatrimestre'=>'6'],
+    //7° CUATRIMESTRE CONTADURIA
+    ['nombre' => 'Impuestos II','cuatrimestre'=>'7'],
+    ['nombre' => 'Contabilidad de sociedades','cuatrimestre'=>'7'],
+    ['nombre' => 'Sociología de las organizaciones','cuatrimestre'=>'7'],
+    ['nombre' => 'Costos para la toma de decisiones','cuatrimestre'=>'7'],
+    //8° CUATRIMESTRE CONTADURIA
+    ['nombre' => 'Impuestos III','cuatrimestre'=>'8'],
+    ['nombre' => 'Cultura organizacional','cuatrimestre'=>'8'],
+    ['nombre' => 'Sistema organizacional y ambiente global','cuatrimestre'=>'8'],
+    ['nombre' => 'Finanzas III','cuatrimestre'=>'8'],
+    //9° CUATRIMESTRE CONTADURIA
+    ['nombre' => 'Comercio internacional','cuatrimestre'=>'9'],
+    ['nombre' => 'Manejo de equipos de trabajo','cuatrimestre'=>'9'],
+    ['nombre' => 'Auditoría fiscal','cuatrimestre'=>'9'],
+    //10° CUATRIMESTRE CONTADURIA
+    ['nombre' => 'Grupos y relaciones interpersonales','cuatrimestre'=>'10'],
+    ['nombre' => 'Sistemas organizacionales','cuatrimestre'=>'10'],
+    ['nombre' => 'Liderazgo organizacional','cuatrimestre'=>'10'],
+
+
+
+    //>>>>>>>HISTORIA<<<<<<<<<
+    //1° CUATRIMESTRE HISTORIA
+      ['nombre' => 'Antropología cultural I','cuatrimestre'=>'1'],
+      ['nombre' => 'México prehispánico I','cuatrimestre'=>'1'],
+      ['nombre' => 'Investigación histórica y documental I','cuatrimestre'=>'1'],
+      ['nombre' => 'Epistemología de las ciencias sociales','cuatrimestre'=>'1'],
+      ['nombre' => 'Lectura y redacción I','cuatrimestre'=>'1'],
+    //2° CUATRIMESTRE HISTORIA
+      ['nombre' => 'Antropología cultural II','cuatrimestre'=>'2'],
+      ['nombre' => 'Historia antigua universal I','cuatrimestre'=>'2'],
+      ['nombre' => 'México prehispánico II','cuatrimestre'=>'2'],
+      ['nombre' => 'Investigación histórica y documental II','cuatrimestre'=>'2'],
+      ['nombre' => 'Lectura y redacción II','cuatrimestre'=>'2'],
+    //3° CUATRIMESTRE HISTORIA
+      ['nombre' => 'Historia antigua universal II','cuatrimestre'=>'3'],
+      ['nombre' => 'México prehispánico III','cuatrimestre'=>'3'],
+      ['nombre' => 'Historia de América Latina I','cuatrimestre'=>'3'],
+      ['nombre' => 'Historia universal I','cuatrimestre'=>'3'],
+      ['nombre' => 'Investigación histórica y documental III','cuatrimestre'=>'3'],
+    //4° CUATRIMESTRE HISTORIA
+      ['nombre' => 'Historia medieval universal I','cuatrimestre'=>'4'],
+      ['nombre' => 'Historiografía de México I','cuatrimestre'=>'4'],
+      ['nombre' => 'México colonial I','cuatrimestre'=>'4'],
+      ['nombre' => 'Historia económica I','cuatrimestre'=>'4'],
+      ['nombre' => 'Historia de Oaxaca I','cuatrimestre'=>'4'],
+    //5° CUATRIMESTRE HISTORIA
+      ['nombre' => 'Historia medieval universal II','cuatrimestre'=>'5'],
+      ['nombre' => 'México colonial II','cuatrimestre'=>'5'],
+      ['nombre' => 'Historiografía de México II','cuatrimestre'=>'5'],
+      ['nombre' => 'Geografía humana I','cuatrimestre'=>'5'],
+      ['nombre' => 'Sociología I','cuatrimestre'=>'5'],
+    //6° CUATRIMESTRE HISTORIA
+      ['nombre' => 'México colonial III','cuatrimestre'=>'6'],
+      ['nombre' => 'Historia moderna universal I','cuatrimestre'=>'6'],
+      ['nombre' => 'Historia de América latina II','cuatrimestre'=>'6'],
+      ['nombre' => 'Historia económica II','cuatrimestre'=>'6'],
+      ['nombre' => 'Historiografía universal II','cuatrimestre'=>'6'],
+    //7° CUATRIMESTRE HISTORIA
+      ['nombre' => 'México independiente I','cuatrimestre'=>'7'],
+      ['nombre' => 'Historia moderna universal II','cuatrimestre'=>'7'],
+      ['nombre' => 'Patrimonio cultural I','cuatrimestre'=>'7'],
+      ['nombre' => 'Geografía humana II','cuatrimestre'=>'7'],
+      ['nombre' => 'Sociología II','cuatrimestre'=>'7'],
+      ['nombre' => 'Historia de Oaxaca II','cuatrimestre'=>'7'],
+    //8° CUATRIMESTRE HISTORIA
+      ['nombre' => 'Historia y medios de comunicación I','cuatrimestre'=>'8'],
+      ['nombre' => 'Historia contemporánea universal I','cuatrimestre'=>'8'],
+      ['nombre' => 'México independiente II','cuatrimestre'=>'8'],
+      ['nombre' => 'Historia de América latina III','cuatrimestre'=>'8'],
+      ['nombre' => 'Patrimonio cultural II','cuatrimestre'=>'8'],
+      ['nombre' => 'Didáctica de historia I','cuatrimestre'=>'8'],
+    //9° CUATRIMESTRE HISTORIA
+      ['nombre' => 'Historia contemporánea universal II','cuatrimestre'=>'9'],
+      ['nombre' => 'México revolucionario I','cuatrimestre'=>'9'],
+      ['nombre' => 'Patrimonio cultural III','cuatrimestre'=>'9'],
+      ['nombre' => 'Historia y medios de comunicación II','cuatrimestre'=>'9'],
+      ['nombre' => 'Didáctica de historia II','cuatrimestre'=>'9'],
+    //10° CUATRIMESTRE HISTORIA
+      ['nombre' => 'Historia contemporánea universal III','cuatrimestre'=>'10'],
+      ['nombre' => 'México revolucionario II','cuatrimestre'=>'10'],
+      ['nombre' => 'Patrimonio cultural IV','cuatrimestre'=>'10'],
+      ['nombre' => 'Historia y medios de comunicación III','cuatrimestre'=>'10'],
+      ['nombre' => 'Didáctica de historia III','cuatrimestre'=>'10'],
+
+
+      //>>>>>PSICOLOGIA<<<<<<<
+      //1° CUATRIMESTRE DE PSICOLOGIA
+      ['nombre' => 'Bases biológicas de la conducta','cuatrimestre'=>'1'],
+      ['nombre' => 'Historia de la psicología I','cuatrimestre'=>'1'],
+      ['nombre' => 'Teorías y sistemas','cuatrimestre'=>'1'],
+      ['nombre' => 'Sensopercepción','cuatrimestre'=>'1'],
+      //2° CUATRIMESTRE DE PSICOLOGIA
+      ['nombre' => 'Anatomía del sistema nervioso','cuatrimestre'=>'2'],
+      ['nombre' => 'Historia de la psicología II','cuatrimestre'=>'2'],
+      ['nombre' => 'Motivación y emoción','cuatrimestre'=>'2'],
+      ['nombre' => 'Aprendizaje y memoria','cuatrimestre'=>'2'],
+      //3° CUATRIMESTRE DE PSICOLOGIA
+      ['nombre' => 'Fisiología del sistema nervioso','cuatrimestre'=>'3'],
+      ['nombre' => 'Pensamiento y lenguaje','cuatrimestre'=>'3'],
+      ['nombre' => 'Desarrollo psicológico I Estadística descriptiva','cuatrimestre'=>'3'],
+      ['nombre' => 'Teoría del aprendizaje','cuatrimestre'=>'3'],
+      //4° CUATRIMESTRE DE PSICOLOGIA
+      ['nombre' => 'Psicología fisiológica','cuatrimestre'=>'4'],
+      ['nombre' => 'Psicopatología','cuatrimestre'=>'4'],
+      ['nombre' => 'Desarrollo humano','cuatrimestre'=>'4'],
+      ['nombre' => 'Desarrollo psicológico II','cuatrimestre'=>'4'],
+      ['nombre' => 'Estadística inferencial','cuatrimestre'=>'4'],
+      ['nombre' => 'Psicología diferencial','cuatrimestre'=>'4'],
+      //5° CUATRIMESTRE DE PSICOLOGIA
+      ['nombre' => 'Teorías dela personalidad I','cuatrimestre'=>'5'],
+      ['nombre' => 'Psicología clínica','cuatrimestre'=>'5'],
+      ['nombre' => 'Psicología industrial I','cuatrimestre'=>'5'],
+      ['nombre' => 'Psicología educativa','cuatrimestre'=>'5'],
+      ['nombre' => 'Métodos de investigación','cuatrimestre'=>'5'],
+      ['nombre' => 'Aprendizaje','cuatrimestre'=>'5'],
+      //6° CUATRIMESTRE DE PSICOLOGIA
+      ['nombre' => 'Teorías de la personalidad II','cuatrimestre'=>'6'],
+      ['nombre' => 'Teoría y técnica de la entrevista','cuatrimestre'=>'6'],
+      ['nombre' => 'Psicología industrial II','cuatrimestre'=>'6'],
+      ['nombre' => 'Sociología de la educación','cuatrimestre'=>'6'],
+      ['nombre' => 'Antropología social','cuatrimestre'=>'6'],
+      ['nombre' => 'Laboratorio de aprendizaje','cuatrimestre'=>'6'],
+      //7° CUATRIMESTRE DE PSICOLOGIA
+      ['nombre' => 'Trastornos mentales orgánicos','cuatrimestre'=>'7'],
+      ['nombre' => 'Psicometría I','cuatrimestre'=>'7'],
+      ['nombre' => 'Psicología del trabajo','cuatrimestre'=>'7'],
+      ['nombre' => 'Modelos psicopedagógicos','cuatrimestre'=>'7'],
+      ['nombre' => 'Psicología social','cuatrimestre'=>'7'],
+      ['nombre' => 'Psicología experimental','cuatrimestre'=>'7'],
+      //8° CUATRIMESTRE DE PSICOLOGIA
+      ['nombre' => 'Trastornos mentales neuróticos','cuatrimestre'=>'8'],
+      ['nombre' => 'Psicometría II','cuatrimestre'=>'8'],
+      ['nombre' => 'Psicodinámica de grupos','cuatrimestre'=>'8'],
+      ['nombre' => 'Pruebas psicopedagógicas','cuatrimestre'=>'8'],
+      ['nombre' => 'Comunicación social','cuatrimestre'=>'8'],
+      ['nombre' => 'Rehabilitación conductual','cuatrimestre'=>'8'],
+      //9° CUATRIMESTRE DE PSICOLOGIA
+      ['nombre' => 'Trastornos mentales psicóticos','cuatrimestre'=>'9'],
+      ['nombre' => 'Psicoterapia I','cuatrimestre'=>'9'],
+      ['nombre' => 'Orientación vocacional','cuatrimestre'=>'9'],
+      ['nombre' => 'Problemas de aprendizaje','cuatrimestre'=>'9'],
+      ['nombre' => 'Psicología comunitaria','cuatrimestre'=>'9'],
+      ['nombre' => 'Psicofarmacología','cuatrimestre'=>'9'],
+      //10° CUATRIMESTRE DE PSICOLOGIA
+      ['nombre' => 'Supervisión de casos','cuatrimestre'=>'10'],
+      ['nombre' => 'Psicoterapia II','cuatrimestre'=>'10'],
+      ['nombre' => 'Seminario de tesis','cuatrimestre'=>'10'],
+      ['nombre' => 'Técnicas de educación especial','cuatrimestre'=>'10'],
+      ['nombre' => 'Etica profesional','cuatrimestre'=>'10'],
+      ['nombre' => 'Integración de estudios','cuatrimestre'=>'10'],
+
+
+      //>>>>>>>>PEDAGOGIA<<<<<<<<<<<
+      //1° CUATRIMESTRE DE PEDAGOGIA
+      ['nombre' => 'Conocimiento de la infancia I','cuatrimestre'=>'1'],
+      ['nombre' => 'Teoría pedagógica I','cuatrimestre'=>'1'],
+      ['nombre' => 'Sociología de la educación I','cuatrimestre'=>'1'],
+      ['nombre' => 'Antropología pedagógica I','cuatrimestre'=>'1'],
+      ['nombre' => 'Psicología de la educación I','cuatrimestre'=>'1'],
+      ['nombre' => 'Iniciación a la investigación pedagógica I','cuatrimestre'=>'1'],
+      //2° CUATRIMESTRE DE PEDAGOGIA
+      ['nombre' => 'Conocimiento de la infancia II','cuatrimestre'=>'2'],
+      ['nombre' => 'Teoría pedagógica II','cuatrimestre'=>'2'],
+      ['nombre' => 'Sociología de la educación II','cuatrimestre'=>'2'],
+      ['nombre' => 'Antropología pedagógica II','cuatrimestre'=>'2'],
+      ['nombre' => 'Psicología de la educación II','cuatrimestre'=>'2'],
+      ['nombre' => 'Iniciación a la investigación pedagógica II','cuatrimestre'=>'2'],
+      //3° CUATRIMESTRE DE PEDAGOGIA
+      ['nombre' => 'Historia general de la educación I','cuatrimestre'=>'3'],
+      ['nombre' => 'Psicotécnica pedagógica I','cuatrimestre'=>'3'],
+      ['nombre' => 'Didáctica general I','cuatrimestre'=>'3'],
+      ['nombre' => 'Problemas contemporáneos de la pedagogía I','cuatrimestre'=>'3'],
+      ['nombre' => 'Conocimiento de los adolescentes I','cuatrimestre'=>'3'],
+      ['nombre' => 'Estadística aplicada a la educación I','cuatrimestre'=>'3'],
+      //4° CUATRIMESTRE DE PEDAGOGIA
+      ['nombre' => 'Historia general de la educación II','cuatrimestre'=>'4'],
+      ['nombre' => 'Psicotécnica pedagógica II','cuatrimestre'=>'4'],
+      ['nombre' => 'Didáctica general II','cuatrimestre'=>'4'],
+      ['nombre' => 'Problemas contemporáneos de la pedagogía II','cuatrimestre'=>'4'],
+      ['nombre' => 'Estadística aplicada a la educación II','cuatrimestre'=>'4'],
+      //5° CUATRIMESTRE DE PEDAGOGIA
+      ['nombre' => 'Historia dela educación en México I','cuatrimestre'=>'5'],
+      ['nombre' => 'Evaluación escolar I','cuatrimestre'=>'5'],
+      ['nombre' => 'Orientación educativa, vocacional y profesional I','cuatrimestre'=>'5'],
+      ['nombre' => 'Auxiliares de la comunicación I','cuatrimestre'=>'5'],
+      ['nombre' => 'Psicología del aprendizaje I','cuatrimestre'=>'5'],
+      ['nombre' => 'Prácticas escolares I','cuatrimestre'=>'5'],
+      //6° CUATRIMESTRE DE PEDAGOGIA
+      ['nombre' => 'Historia dela educación en México II','cuatrimestre'=>'6'],
+      ['nombre' => 'Evaluación escolar II','cuatrimestre'=>'6'],
+      ['nombre' => 'Orientación educativa, vocacional y profesional II','cuatrimestre'=>'6'],
+      ['nombre' => 'Auxiliares dela comunicación II','cuatrimestre'=>'6'],
+      ['nombre' => 'Psicología del aprendizaje II','cuatrimestre'=>'6'],
+      ['nombre' => 'Prácticas escolares II','cuatrimestre'=>'6'],
+      //7° CUATRIMESTRE DE PEDAGOGIA
+      ['nombre' => 'Filosofía de la educación I','cuatrimestre'=>'7'],
+      ['nombre' => 'Didáctica y práctica de la especialidad I','cuatrimestre'=>'7'],
+      ['nombre' => 'Legislación educativa mexicana I','cuatrimestre'=>'7'],
+      ['nombre' => 'Organización, administración y supervisión escolar I','cuatrimestre'=>'7'],
+      ['nombre' => 'Laboratorio psicopedagógico I','cuatrimestre'=>'7'],
+      ['nombre' => 'Política educativa en México I','cuatrimestre'=>'7'],
+      //8° CUATRIMESTRE DE PEDAGOGIA
+      ['nombre' => 'Filosofía de la educación II','cuatrimestre'=>'8'],
+      ['nombre' => 'Didáctica y práctica de la especialidad II','cuatrimestre'=>'8'],
+      ['nombre' => 'Legislación educativa mexicana II','cuatrimestre'=>'8'],
+      ['nombre' => 'Organización, administración y supervisión escolar II','cuatrimestre'=>'8'],
+      ['nombre' => 'Laboratorio psicopedagógico II','cuatrimestre'=>'8'],
+      ['nombre' => 'Política educativa en México II','cuatrimestre'=>'8'],
+      //9° CUATRIMESTRE DE PEDAGOGIA
+      ['nombre' => 'Seminario sobre métodos de investigación y asesoría de tesis I','cuatrimestre'=>'9'],
+      ['nombre' => 'Expresión artística I','cuatrimestre'=>'9'],
+      ['nombre' => 'Pedagogía monográfica I','cuatrimestre'=>'9'],
+      //10° CUATRIMESTRE DE PEDAGOGIA
+      ['nombre' => 'Seminario sobre métodos de investigación y asesoría de tesis II','cuatrimestre'=>'9'],
+      ['nombre' => 'Expresión artística II','cuatrimestre'=>'9'],
+      ['nombre' => 'Pedagogía monográfica II','cuatrimestre'=>'9'],
+
+       //>>>>>>>CIENCIAS Y TECNICAS DE LA COMUNICACION<<<<<<<<<
+      //1° CUATRIMESTRE CTC
+      ['nombre' => 'Historia de los medios','cuatrimestre'=>'9'],
+      ['nombre' => 'Proceso creativo de la comunicación','cuatrimestre'=>'9'],
+      ['nombre' => 'Expresión oral','cuatrimestre'=>'9'],
+      ['nombre' => 'Redacción','cuatrimestre'=>'9'],
+      ['nombre' => 'Fotografía I','cuatrimestre'=>'9'],
+      ['nombre' => 'Principios de economía','cuatrimestre'=>'9'],
+      //2° CUATRIMESTRE CTC
+      ['nombre' => 'Filosofía de la comunicación','cuatrimestre'=>'9'],
+      ['nombre' => 'Sociología de la comunicación','cuatrimestre'=>'9'],
+      ['nombre' => 'Arte y comunicación','cuatrimestre'=>'9'],
+      ['nombre' => 'Periodismo I','cuatrimestre'=>'9'],
+      ['nombre' => 'Fotografía II','cuatrimestre'=>'9'],
+      ['nombre' => 'Radio I','cuatrimestre'=>'9'],
+      //3° CUATRIMESTRE CTC
+      ['nombre' => 'Lenguaje cinematográfico','cuatrimestre'=>'9'],
+      ['nombre' => 'Psicología de la comunicación','cuatrimestre'=>'9'],
+      ['nombre' => 'Periodismo II','cuatrimestre'=>'9'],
+      ['nombre' => 'Radio II','cuatrimestre'=>'9'],
+      ['nombre' => 'Televisión I','cuatrimestre'=>'9'],      
+      ['nombre' => 'Producción audiovisual','cuatrimestre'=>'9'],
+      //4° CUATRIMESTRE CTC
+      ['nombre' => 'Mercadotecnia','cuatrimestre'=>'9'],
+      ['nombre' => 'Comunicación en pequeños grupos','cuatrimestre'=>'9'],
+      ['nombre' => 'Diseño grafico','cuatrimestre'=>'9'],
+      ['nombre' => 'Cultura musical','cuatrimestre'=>'9'],
+      ['nombre' => 'Televisión II','cuatrimestre'=>'9'],
+      ['nombre' => 'Técnicas de producción en vivo','cuatrimestre'=>'9'],
+      //5° CUATRIMESTRE CTC
+      ['nombre' => 'Teoría social I','cuatrimestre'=>'9'],
+      ['nombre' => 'Teoría de la comunicación I','cuatrimestre'=>'9'],
+      ['nombre' => 'Psicología del mexicano','cuatrimestre'=>'9'],
+      ['nombre' => 'Investigación de la comunicación','cuatrimestre'=>'9'],
+      ['nombre' => 'Gobierno y proceso político en México','cuatrimestre'=>'9'],
+      ['nombre' => 'Introducción a la contabilidad','cuatrimestre'=>'9'],
+      //6° CUATRIMESTRE CTC
+      ['nombre' => 'Teoria de la comunicacion II','cuatrimestre'=>'9'],
+      ['nombre' => 'Teoría social II','cuatrimestre'=>'9'],
+      ['nombre' => 'Introducción al derecho','cuatrimestre'=>'9'],
+      ['nombre' => 'Publicidad y propaganda','cuatrimestre'=>'9'],
+      ['nombre' => 'Comunicación y literatura I','cuatrimestre'=>'9'],
+      ['nombre' => 'Administración de los medios','cuatrimestre'=>'9'],
+      //7° CUATRIMESTRE CTC
+      ['nombre' => 'Opinión pública','cuatrimestre'=>'9'],
+      ['nombre' => 'Derecho y comunicación','cuatrimestre'=>'9'],
+      ['nombre' => 'Comunicación y literatura II','cuatrimestre'=>'9'],
+      ['nombre' => 'Historia y crítica cinematográfica','cuatrimestre'=>'9'],
+      ['nombre' => 'Radio cultural','cuatrimestre'=>'9'],
+      //8° CUATRIMESTRE CTC
+      ['nombre' => 'Prensa comparada','cuatrimestre'=>'9'],
+      ['nombre' => 'Derecho y etnias','cuatrimestre'=>'9'],
+      ['nombre' => 'Didáctica de la comunicación','cuatrimestre'=>'9'],
+      ['nombre' => 'Investigación de mercados','cuatrimestre'=>'9'],
+      ['nombre' => 'Televisión educativa','cuatrimestre'=>'9'],
+      //9° CUATRIMESTRE CTC
+      ['nombre' => 'Telemática','cuatrimestre'=>'9'],
+      ['nombre' => 'Proyecto profesional','cuatrimestre'=>'9']
+
+      
+        /*Falta agregareles el cautrimestre
     //MATERIAS GENERALES
     ['nombre' => 'Administracion I','cuatrimestre'=>'1'],
     ['nombre' => 'Administracion II'],
@@ -129,418 +537,7 @@ class CreateMateriasTable extends Migration
     ['nombre' => 'Seminario de tesis II'],
     */
 
-    
-
-
-    /*Falta agregarles el cuatrimestre
-         //>>>>ADMINISTRACION<<<<<<
-
-    //1°CUATRIMESTRE ADMINISTRACION
-    ['nombre' => 'Contabilidad básica'],
-    ['nombre' => 'Introducción al derecho'],
-    ['nombre' => 'Matemáticas básicas'],
-    //2°CUATRIMESTRE ADMINISTRACION
-    ['nombre' => 'Contabilidad financiera'],
-    ['nombre' => 'Matemáticas para administración'],
-    //3°CUATRIMESTRE ADMINISTRACION
-    ['nombre' => 'Contabilidad de costos'],
-    ['nombre' => 'Matemáticas financieras'],
-    //4° CUATRIMESTRE ADMINISTRACION
-    ['nombre' => 'Administración del factor humano I'],
-    ['nombre' => 'Contabilidad para administración'],
-    ['nombre' => 'Estadística'],
-    ['nombre' => 'Economía de la empresa'],
-    //5° CUATRIMESTRE ADMINISTRACION
-    ['nombre' => 'Administración del factor humano II'],
-    ['nombre' => 'Lectura y redacción'],
-    ['nombre' => 'Derecho privado I'],
-    ['nombre' => 'Administración financiera I'],
-    ['nombre' => 'Estadística para administración I'],
-    ['nombre' => 'Seguridad social'],
-    //6° CUATRIMESTRE ADMINISTRACION
-    ['nombre' => 'Psicología de las organizaciones'],
-    ['nombre' => 'Derecho privado II'],
-    ['nombre' => 'Marketing I'],
-    ['nombre' => 'Administración financiera II'],
-    ['nombre' => 'Estadística para administración II'],
-    ['nombre' => 'Administración estratégica'],
-    //7° CUATRIMESTRE ADMINISTRACION
-    ['nombre' => 'Derecho mercantil I'],
-    ['nombre' => 'Comportamiento organizacional'],
-    ['nombre' => 'Marketing II'],
-    //8° CUATRIMESTRE ADMINISTRACION
-    ['nombre' => 'Derecho mercantil II'],
-    ['nombre' => 'Administración de la producción'],
-    ['nombre' => 'Liderazgo'],
-    ['nombre' => 'Etica de las organizaciones'],
-    //9° CUATRIMESTRE ADMINISTRACION
-    ['nombre' => 'Comercio internacional I'],
-    ['nombre' => 'Elaboración de proyectos'],
-    ['nombre' => 'Administración de la pequeña y mediana empresa'],
-    ['nombre' => 'Administración de calidad'],
-    //10° CUATRIMESTRE ADMINISTRACION
-    ['nombre' => 'Simulador de negocios'],
-    ['nombre' => 'Evaluación de proyectos'],
-    ['nombre' => 'Comercio internacional II'],
-    ['nombre' => 'Logística'],
-
-
-
-    //>>>>>CIENCIAS POLITICAS Y DERECHO<<<<<<
-    //1° CUATRIMESTRE CIENCIAS POLITICAS
-    ['nombre' => 'Introducción al estudio del derecho'],
-    ['nombre' => 'Sociología jurídica'],
-    ['nombre' => 'Procesos básicos del pensamiento'],
-    ['nombre' => 'Matemáticas'],
-    //2° CUATRIMESTRE CIENCIAS POLITICAS
-
-    //3° CUATRIMESTRE CIENCIAS POLITICAS
-    ['nombre' => 'Teoría del Estado'],
-    ['nombre' => 'Estadística I'],
-    ['nombre' => 'Informática III'],
-    //4° CUATRIMESTRE CIENCIAS POLITICAS
-    ['nombre' => 'Estadística II'],
-    ['nombre' => 'Sistemas políticos contemporáneos'],
-    ['nombre' => 'Informática IV'],
-    //5° CUATRIMESTRE CIENCIAS POLITICAS
-    ['nombre' => 'Garantías individuales y sociales'],
-    ['nombre' => 'Derecho público'],
-    ['nombre' => 'SSistema político mexicano'],
-    ['nombre' => 'Razonamiento verbal para la toma de decisiones'],
-    ['nombre' => 'Finanzas públicas I'],
-    //6° CUATRIMESTRE CIENCIAS POLITICAS
-    ['nombre' => 'Derecho privado'],
-    ['nombre' => 'Administración pública I'],
-    ['nombre' => 'Ciencia política I'],
-    ['nombre' => 'Liderazgo estratégico'],
-    ['nombre' => 'Finanzas públicas II'],
-    //7° CUATRIMESTRE CIENCIAS POLITICAS
-    ['nombre' => 'Derecho económico'],
-    ['nombre' => 'Administración pública II'],
-    ['nombre' => 'Ciencia política II'],
-    ['nombre' => 'Comunicación'],
-    ['nombre' => 'Expresión oral y escrita'],
-    //8° CUATRIMESTRE CIENCIAS POLITICAS
-    ['nombre' => 'Derecho municipal'],
-    ['nombre' => 'Política pública II'],
-    //9° CUATRIMESTRE CIENCIAS POLITICAS
-    ['nombre' => 'Políticas públicas II'],
-    ['nombre' => 'Derecho internacional público'],
-    ['nombre' => 'Administración de recursos gubernamentales'],
-    ['nombre' => 'Finanzas internacionales'],
-    ['nombre' => 'Manejo de grupos'],
-    //10° CUATRIMESTRE CIENCIAS POLITICAS
-    ['nombre' => 'Derecho internacional privado'],
-    ['nombre' => 'Dinámica psicosocial'],
-    ['nombre' => 'Auditoria gubernamental'],
-    ['nombre' => 'Derecho electoral'],
-    ['nombre' => 'Etica'],
-
-
-
-    //>>>>>CONTADURIA<<<<<<
-    //1° CUATRIMESTRE CONTADURIA
-    ['nombre' => 'Contabilidad I'],
-    //2° CUATRIMESTRE CONTADURIA
-    ['nombre' => 'Contabilidad II'],
-    ['nombre' => 'Derecho constitucional y administrativo'],
-    ['nombre' => ''],
-    //3° CUATRIMESTRE CONTADURIA
-    ['nombre' => 'Contabilidad de costos I'],
-    ['nombre' => 'Matemáticas financieras'],
-    ['nombre' => 'Informática para contabilidad I'],
-    //4° CUATRIMESTRE CONTADURIA
-    ['nombre' => 'Contabilidad de costos II'],
-    ['nombre' => 'Derecho mercantil'],
-    ['nombre' => 'Informática para contabilidad II'],
-    //5° CUATRIMESTRE CONTADURIA
-    ['nombre' => 'Informática para contabilidad II'],
-    ['nombre' => 'Derecho fiscal'],
-    ['nombre' => 'Contabilidad superior'],
-    //6° CUATRIMESTRE CONTADURIA
-    ['nombre' => 'Impuestos I'],
-    ['nombre' => 'Liderazgo y gestión'],
-    ['nombre' => 'Administración de las inversiones'],
-    //7° CUATRIMESTRE CONTADURIA
-    ['nombre' => 'Impuestos II'],
-    ['nombre' => 'Contabilidad de sociedades'],
-    ['nombre' => 'Sociología de las organizaciones'],
-    ['nombre' => 'Costos para la toma de decisiones'],
-    //8° CUATRIMESTRE CONTADURIA
-    ['nombre' => 'Impuestos III'],
-    ['nombre' => 'Cultura organizacional'],
-    ['nombre' => 'Sistema organizacional y ambiente global'],
-    ['nombre' => 'Finanzas III'],
-    //9° CUATRIMESTRE CONTADURIA
-    ['nombre' => 'Comercio internacional'],
-    ['nombre' => 'Manejo de equipos de trabajo'],
-    ['nombre' => 'Auditoría fiscal'],
-    //10° CUATRIMESTRE CONTADURIA
-    ['nombre' => 'Grupos y relaciones interpersonales'],
-    ['nombre' => 'Sistemas organizacionales'],
-    ['nombre' => 'Liderazgo organizacional'],
-
-
-
-    //>>>>>>>HISTORIA<<<<<<<<<
-    //1° CUATRIMESTRE HISTORIA
-      ['nombre' => 'Antropología cultural I'],
-      ['nombre' => 'México prehispánico I'],
-      ['nombre' => 'Investigación histórica y documental I'],
-      ['nombre' => 'Epistemología de las ciencias sociales'],
-      ['nombre' => 'Lectura y redacción I'],
-    //2° CUATRIMESTRE HISTORIA
-      ['nombre' => 'Antropología cultural II'],
-      ['nombre' => 'Historia antigua universal I'],
-      ['nombre' => 'México prehispánico II'],
-      ['nombre' => 'Investigación histórica y documental II'],
-      ['nombre' => 'Lectura y redacción II'],
-    //3° CUATRIMESTRE HISTORIA
-      ['nombre' => 'Historia antigua universal II'],
-      ['nombre' => 'México prehispánico III'],
-      ['nombre' => 'Historia de América Latina I'],
-      ['nombre' => 'Historia universal I'],
-      ['nombre' => 'Investigación histórica y documental III'],
-    //4° CUATRIMESTRE HISTORIA
-      ['nombre' => 'Historia medieval universal I'],
-      ['nombre' => 'Historiografía de México I'],
-      ['nombre' => 'México colonial I'],
-      ['nombre' => 'Historia económica I'],
-      ['nombre' => 'Historia de Oaxaca I'],
-    //5° CUATRIMESTRE HISTORIA
-      ['nombre' => 'Historia medieval universal II'],
-      ['nombre' => 'México colonial II'],
-      ['nombre' => 'Historiografía de México II'],
-      ['nombre' => 'Geografía humana I'],
-      ['nombre' => 'Sociología I'],
-    //6° CUATRIMESTRE HISTORIA
-      ['nombre' => 'México colonial III'],
-      ['nombre' => 'Historia moderna universal I'],
-      ['nombre' => 'Historia de América latina II'],
-      ['nombre' => 'Historia económica II'],
-      ['nombre' => 'Historiografía universal II'],
-    //7° CUATRIMESTRE HISTORIA
-      ['nombre' => 'México independiente I'],
-      ['nombre' => 'Historia moderna universal II'],
-      ['nombre' => 'Patrimonio cultural I'],
-      ['nombre' => 'Geografía humana II'],
-      ['nombre' => 'Sociología II'],
-      ['nombre' => 'Historia de Oaxaca II'],
-    //8° CUATRIMESTRE HISTORIA
-      ['nombre' => 'Historia y medios de comunicación I'],
-      ['nombre' => 'Historia contemporánea universal I'],
-      ['nombre' => 'México independiente II'],
-      ['nombre' => 'Historia de América latina III'],
-      ['nombre' => 'Patrimonio cultural II'],
-      ['nombre' => 'Didáctica de historia I'],
-    //9° CUATRIMESTRE HISTORIA
-      ['nombre' => 'Historia contemporánea universal II'],
-      ['nombre' => 'México revolucionario I'],
-      ['nombre' => 'Patrimonio cultural III'],
-      ['nombre' => 'Historia y medios de comunicación II'],
-      ['nombre' => 'Didáctica de historia II'],
-    //10° CUATRIMESTRE HISTORIA
-      ['nombre' => 'Historia contemporánea universal III'],
-      ['nombre' => 'México revolucionario II'],
-      ['nombre' => 'Patrimonio cultural IV'],
-      ['nombre' => 'Historia y medios de comunicación III'],
-      ['nombre' => 'Didáctica de historia III'],
-
-
-
-      //>>>>>>>CIENCIAS Y TECNICAS DE LA COMUNICACION<<<<<<<<<
-      //1° CUATRIMESTRE CTC
-      ['nombre' => 'Historia de los medios'],
-      ['nombre' => 'Proceso creativo de la comunicación'],
-      ['nombre' => 'Expresión oral'],
-      ['nombre' => 'Redacción'],
-      ['nombre' => 'Fotografía I'],
-      ['nombre' => 'Principios de economía'],
-      //2° CUATRIMESTRE CTC
-      ['nombre' => 'Filosofía de la comunicación'],
-      ['nombre' => 'Sociología de la comunicación'],
-      ['nombre' => 'Arte y comunicación'],
-      ['nombre' => 'Periodismo I'],
-      ['nombre' => 'Fotografía II'],
-      ['nombre' => 'Radio I'],
-      //3° CUATRIMESTRE CTC
-      ['nombre' => 'Lenguaje cinematográfico'],
-      ['nombre' => 'Psicología de la comunicación'],
-      ['nombre' => 'Periodismo II'],
-      ['nombre' => 'Radio II'],
-      ['nombre' => 'Televisión I'],
-      ['nombre' => 'Producción audiovisual'],
-      //4° CUATRIMESTRE CTC
-      ['nombre' => 'Mercadotecnia'],
-      ['nombre' => 'Comunicación en pequeños grupos'],
-      ['nombre' => 'Diseño grafico'],
-      ['nombre' => 'Cultura musical'],
-      ['nombre' => 'Televisión II'],
-      ['nombre' => 'Técnicas de producción en vivo'],
-      //5° CUATRIMESTRE CTC
-      ['nombre' => 'Teoría social I'],
-      ['nombre' => 'Teoría de la comunicación I'],
-      ['nombre' => 'Psicología del mexicano'],
-      ['nombre' => 'Investigación de la comunicación'],
-      ['nombre' => 'Gobierno y proceso político en México'],
-      ['nombre' => 'Introducción a la contabilidad'],
-      //6° CUATRIMESTRE CTC
-      ['nombre' => 'Teoria de la comunicacion II'],
-      ['nombre' => 'Teoría social II'],
-      ['nombre' => 'Introducción al derecho'],
-      ['nombre' => 'Publicidad y propaganda'],
-      ['nombre' => 'Comunicación y literatura I'],
-      ['nombre' => 'Administración de los medios'],
-      //7° CUATRIMESTRE CTC
-      ['nombre' => 'Opinión pública'],
-      ['nombre' => 'Derecho y comunicación'],
-      ['nombre' => 'Comunicación y literatura II'],
-      ['nombre' => 'Historia y crítica cinematográfica'],
-      ['nombre' => 'Radio cultural'],
-      //8° CUATRIMESTRE CTC
-      ['nombre' => 'Prensa comparada'],
-      ['nombre' => 'Derecho y etnias'],
-      ['nombre' => 'Didáctica de la comunicación'],
-      ['nombre' => 'Investigación de mercados'],
-      ['nombre' => 'Televisión educativa'],
-      //9° CUATRIMESTRE CTC
-      ['nombre' => 'Telemática'],
-      ['nombre' => 'Proyecto profesional'],
-
-
-      //>>>>>PSICOLOGIA<<<<<<<
-      //1° CUATRIMESTRE DE PSICOLOGIA
-      ['nombre' => 'Bases biológicas de la conducta'],
-      ['nombre' => 'Historia de la psicología I'],
-      ['nombre' => 'Teorías y sistemas'],
-      ['nombre' => 'Sensopercepción'],
-      //2° CUATRIMESTRE DE PSICOLOGIA
-      ['nombre' => 'Anatomía del sistema nervioso'],
-      ['nombre' => 'Historia de la psicología II'],
-      ['nombre' => 'Motivación y emoción'],
-      ['nombre' => 'Aprendizaje y memoria'],
-      //3° CUATRIMESTRE DE PSICOLOGIA
-      ['nombre' => 'Fisiología del sistema nervioso'],
-      ['nombre' => 'Pensamiento y lenguaje'],
-      ['nombre' => 'Desarrollo psicológico I Estadística descriptiva'],
-      ['nombre' => 'Teoría del aprendizaje'],
-      //4° CUATRIMESTRE DE PSICOLOGIA
-      ['nombre' => 'Psicología fisiológica'],
-      ['nombre' => 'Psicopatología'],
-      ['nombre' => 'Desarrollo humano'],
-      ['nombre' => 'Desarrollo psicológico II'],
-      ['nombre' => 'Estadística inferencial'],
-      ['nombre' => 'Psicología diferencial'],
-      //5° CUATRIMESTRE DE PSICOLOGIA
-      ['nombre' => 'Teorías dela personalidad I'],
-      ['nombre' => 'Psicología clínica'],
-      ['nombre' => 'Psicología industrial I'],
-      ['nombre' => 'Psicología educativa'],
-      ['nombre' => 'Métodos de investigación'],
-      ['nombre' => 'Aprendizaje'],
-      //6° CUATRIMESTRE DE PSICOLOGIA
-      ['nombre' => 'Teorías de la personalidad II'],
-      ['nombre' => 'Teoría y técnica de la entrevista'],
-      ['nombre' => 'Psicología industrial II'],
-      ['nombre' => 'Sociología de la educación'],
-      ['nombre' => 'Antropología social'],
-      ['nombre' => 'Laboratorio de aprendizaje'],
-      //7° CUATRIMESTRE DE PSICOLOGIA
-      ['nombre' => 'Trastornos mentales orgánicos'],
-      ['nombre' => 'Psicometría I'],
-      ['nombre' => 'Psicología del trabajo'],
-      ['nombre' => 'Modelos psicopedagógicos'],
-      ['nombre' => 'Psicología social'],
-      ['nombre' => 'Psicología experimental'],
-      //8° CUATRIMESTRE DE PSICOLOGIA
-      ['nombre' => 'Trastornos mentales neuróticos'],
-      ['nombre' => 'Psicometría II'],
-      ['nombre' => 'Psicodinámica de grupos'],
-      ['nombre' => 'Pruebas psicopedagógicas'],
-      ['nombre' => 'Comunicación social'],
-      ['nombre' => 'Rehabilitación conductual'],
-      //9° CUATRIMESTRE DE PSICOLOGIA
-      ['nombre' => 'Trastornos mentales psicóticos'],
-      ['nombre' => 'Psicoterapia I'],
-      ['nombre' => 'Orientación vocacional'],
-      ['nombre' => 'Problemas de aprendizaje'],
-      ['nombre' => 'Psicología comunitaria'],
-      ['nombre' => 'Psicofarmacología'],
-      //10° CUATRIMESTRE DE PSICOLOGIA
-      ['nombre' => 'Supervisión de casos'],
-      ['nombre' => 'Psicoterapia II'],
-      ['nombre' => 'Seminario de tesis'],
-      ['nombre' => 'Técnicas de educación especial'],
-      ['nombre' => 'Etica profesional'],
-      ['nombre' => 'Integración de estudios'],
-
-
-      //>>>>>>>>PEDAGOGIA<<<<<<<<<<<
-      //1° CUATRIMESTRE DE PEDAGOGIA
-      ['nombre' => 'Conocimiento de la infancia I'],
-      ['nombre' => 'Teoría pedagógica I'],
-      ['nombre' => 'Sociología de la educación I'],
-      ['nombre' => 'Antropología pedagógica I'],
-      ['nombre' => 'Psicología de la educación I'],
-      ['nombre' => 'Iniciación a la investigación pedagógica I'],
-      //2° CUATRIMESTRE DE PEDAGOGIA
-      ['nombre' => 'Conocimiento de la infancia II'],
-      ['nombre' => 'Teoría pedagógica II'],
-      ['nombre' => 'Sociología de la educación II'],
-      ['nombre' => 'Antropología pedagógica II'],
-      ['nombre' => 'Psicología de la educación II'],
-      ['nombre' => 'Iniciación a la investigación pedagógica II'],
-      //3° CUATRIMESTRE DE PEDAGOGIA
-      ['nombre' => 'Historia general de la educación I'],
-      ['nombre' => 'Psicotécnica pedagógica I'],
-      ['nombre' => 'Didáctica general I'],
-      ['nombre' => 'Problemas contemporáneos de la pedagogía I'],
-      ['nombre' => 'Conocimiento de los adolescentes I'],
-      ['nombre' => 'Estadística aplicada a la educación I'],
-      //4° CUATRIMESTRE DE PEDAGOGIA
-      ['nombre' => 'Historia general de la educación II'],
-      ['nombre' => 'Psicotécnica pedagógica II'],
-      ['nombre' => 'Didáctica general II'],
-      ['nombre' => 'Problemas contemporáneos de la pedagogía II'],
-      ['nombre' => 'Estadística aplicada a la educación II'],
-      //5° CUATRIMESTRE DE PEDAGOGIA
-      ['nombre' => 'Historia dela educación en México I'],
-      ['nombre' => 'Evaluación escolar I'],
-      ['nombre' => 'Orientación educativa, vocacional y profesional I'],
-      ['nombre' => 'Auxiliares de la comunicación I'],
-      ['nombre' => 'Psicología del aprendizaje I'],
-      ['nombre' => 'Prácticas escolares I'],
-      //6° CUATRIMESTRE DE PEDAGOGIA
-      ['nombre' => 'Historia dela educación en México II'],
-      ['nombre' => 'Evaluación escolar II'],
-      ['nombre' => 'Orientación educativa, vocacional y profesional II'],
-      ['nombre' => 'Auxiliares dela comunicación II'],
-      ['nombre' => 'Psicología del aprendizaje II'],
-      ['nombre' => 'Prácticas escolares II'],
-      //7° CUATRIMESTRE DE PEDAGOGIA
-      ['nombre' => 'Filosofía de la educación I'],
-      ['nombre' => 'Didáctica y práctica de la especialidad I'],
-      ['nombre' => 'Legislación educativa mexicana I'],
-      ['nombre' => 'Organización, administración y supervisión escolar I'],
-      ['nombre' => 'Laboratorio psicopedagógico I'],
-      ['nombre' => 'Política educativa en México I'],
-      //8° CUATRIMESTRE DE PEDAGOGIA
-      ['nombre' => 'Filosofía de la educación II'],
-      ['nombre' => 'Didáctica y práctica de la especialidad II'],
-      ['nombre' => 'Legislación educativa mexicana II'],
-      ['nombre' => 'Organización, administración y supervisión escolar II'],
-      ['nombre' => 'Laboratorio psicopedagógico II'],
-      ['nombre' => 'Política educativa en México II'],
-      //9° CUATRIMESTRE DE PEDAGOGIA
-      ['nombre' => 'Seminario sobre métodos de investigación y asesoría de tesis I'],
-      ['nombre' => 'Expresión artística I'],
-      ['nombre' => 'Pedagogía monográfica I'],
-      //10° CUATRIMESTRE DE PEDAGOGIA
-      ['nombre' => 'Seminario sobre métodos de investigación y asesoría de tesis II'],
-      ['nombre' => 'Expresión artística II'],
-      ['nombre' => 'Pedagogía monográfica II'],
-      */
-]);
+      ]);
 
     }
 
