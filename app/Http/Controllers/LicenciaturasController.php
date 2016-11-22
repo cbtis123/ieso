@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Licenciatura;
+use App\Coordinador;
 use App\Http\Requests;
 use App\Http\Requests\LicenciaturaRequest;
 
@@ -32,10 +33,11 @@ class LicenciaturasController extends Controller
      */
     public function create()
     {
+        $coordinadores= Coordinador::orderBy('nombre','ASC')->pluck('nombre','id');
         //Se crea un objeto vacio del modelo Licenciatura
         $licenciatura= new Licenciatura;
         //Se manda a llamar la vista create y le pasamos el objeto vacio que creamos con el modelo Licenciatura
-        return view('licenciaturas.create')->with('licenciatura',$licenciatura);
+        return view('licenciaturas.create')->with('licenciatura',$licenciatura)->with('coordinadores',$coordinadores);
     }
 
     /**
@@ -75,10 +77,11 @@ class LicenciaturasController extends Controller
      */
     public function edit($id)
     {
+        $coordinadores= Cooridinador::orderBy('nombre','ASC')->pluck('nombre','id');
         //Buscamos la licenciatura que queremos modificar con el modelo Licenciatura y con el parametro ID que rescibimos
         $licenciatura = Licenciatura::find($id);
         //Mandamos a llamar la vista edit y le mandamos la licenciatura que extragimos de la base mediante el model Licenciatura
-        return view('licenciaturas.edit')->with('licenciatura',$licenciatura);
+        return view('licenciaturas.edit')->with('licenciatura',$licenciatura)->with('coordinadores',$coordinadores);
     }
 
     /**

@@ -17,7 +17,6 @@
           <td>CP</td>
           <td>Telefono_C</td>
           <td>Celular</td>
-          <td>Especialidad</td>
           <td>Editar</td>
           <td>Eliminar</td>
         </tr>
@@ -36,7 +35,7 @@
             <td>{{$coordinador->cp}}</td>
             <td>{{$coordinador->telefono_c}}</td>
             <td>{{$coordinador->celular}}</td>
-            <td>{{$coordinador->licenciatura_id}}</td>
+
 
             <td>
               <a href="{{route('coordinadores.edit',$coordinador)}}" class="btn btn-warning"><span class="glyphicon glyphicon-wrench"></span> </a>

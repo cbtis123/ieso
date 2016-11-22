@@ -16,9 +16,11 @@ class CreateLicenciaturasTable extends Migration
         Schema::create('licenciaturas', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre');
+            $table->integer('coordinador_id')->unsigned()->nullable();
+            $table->foreign('coordinador_id')->references('id')->on('coordinadores')->onDelete('cascade');
             $table->timestamps();
         });
-
+  
         DB::table('licenciaturas')->insert([
     ['nombre' => 'Psicología'],
     ['nombre' => 'Pedagogía'],
@@ -27,7 +29,7 @@ class CreateLicenciaturasTable extends Migration
     ['nombre' => 'Derecho'],
     ['nombre' => 'Contaduría Publica y Gestión Empresarial'],
     ['nombre' => 'Administración'],
-    ['nombre' => 'Historia']
+    ['nombre' => 'Historia'],
 ]);
 
     }

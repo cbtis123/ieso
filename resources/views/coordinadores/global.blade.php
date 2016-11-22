@@ -60,21 +60,7 @@
    </div>
 </div>
 <!--                       Licenciatura                                 -->
-@if($coordinador->licenciatura)<!--  Evaluamos si alumno contiene datos, como contiene datos se manda la etiqueta de editar        -->
-   <div class='form-group row'>
-      {!!Form::label('licenciatura','Licenciatura',['class'=>'control-label col-xs-12 col-md-1'])!!}
-      <div class="col-xs-12 col-md-10">
-         {!!Form::select('licenciatura_id',$licenciaturas,$coordinador->licenciatura->id,['class'=>'form-control select-query'])!!}
-      </div>
-   </div>
-@else
-   <div class='form-group row'>
-      {!!Form::label('licenciatura','Licenciatura',['class'=>'control-label col-xs-12 col-md-1'])!!}
-      <div class="col-xs-12 col-md-10">
-         {!!Form::select('licenciatura_id',$licenciaturas,null,['class'=>'form-control select-query','placeholder'=>'Elige Licenciatura..'])!!}
-      </div>
-   </div>
-@endif
+
 <div class='form-group row'>
    {!!Form::submit('Enviar',['class'=>'btn btn-primary col-xs-offset-1'])!!}
 

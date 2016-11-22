@@ -26,8 +26,6 @@ class CreateCoordinadoresTable extends Migration
           $table->string('telefono_c');
           $table->string('celular');
           $table->integer('user_id')->unsigned()->nullable();
-          $table->integer('licenciatura_id')->unsigned()->nullable();;
-          $table->foreign('licenciatura_id')->references('id')->on('licenciaturas')->onDelete('cascade');
           $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
           $table->timestamps();
         });

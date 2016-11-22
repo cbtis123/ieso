@@ -68,11 +68,11 @@ class CoordinadoresController extends Controller
    */
   public function edit($id)
   {
-      $licenciaturas= Licenciatura::orderBy('nombre','ASC')->pluck('nombre','id');
+
       //Buscamos la coordinador que queremos modificar con el modelo coordinador y con el parametro ID que rescibimos
       $coordinador = Coordinador::find($id);
       //Mandamos a llamar la vista edit y le mandamos la coordinador que extragimos de la base mediante el model coordinador
-      return view('coordinadores.edit')->with('coordinador',$coordinador)->with('licenciaturas',$licenciaturas);
+      return view('coordinadores.edit')->with('coordinador',$coordinador);
   }
 
   /**
