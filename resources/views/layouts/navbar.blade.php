@@ -22,12 +22,10 @@
 				  	<li><a href="{{ url('/aulas') }}" ><i class="fa fa-book" aria-hidden="true"></i> Aulas</a></li>
 				  	<li><a href="{{ url('/licenciaturas') }}"><i class="fa fa-book" aria-hidden="true"></i> Licenciaturas</a></li>
 				  	<li><a href="{{ url('/grupos') }}"><i class="fa fa-book" aria-hidden="true"></i> Grupos</a></li>
-				  	<li><a href="{{ url('/calificaciones') }}"><i class="fa fa-book" aria-hidden="true"></i> Califiaciones</a></li>
 				  </ul>
 				</li>	
 
 			  <li><a href="{{ url('/tutores') }}"><i class="fa fa-users" aria-hidden="true"></i> Tutores</a></li>
-			  <li><a href="{{ url('/horarios') }}"><i class="fa fa-clock-o" aria-hidden="true"></i> Horarios</a></li>
 				<li><a href="{{ url('/coordinadores') }}"><i class="fa fa-hand-paper-o" aria-hidden="true"></i>Coordinadores</a></li>
 
 
