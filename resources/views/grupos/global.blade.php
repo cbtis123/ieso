@@ -6,11 +6,6 @@
     </div>
   </div>
 
-  <div class='group'>
-     {!!Form::label('licenciatura_id','Licenciatura')!!}
-     {!!Form::select('licenciatura_id',$licenciaturas,['class'=>'form-control','placeholder'=>'nombre'])!!}
-  </div>
-
   <!--                       Licenciatura                                 -->
   @if($grupo->licenciatura)<!--  Evaluamos si alumno contiene datos, como contiene datos se manda la etiqueta de editar        -->
     <div class='form-group row'>

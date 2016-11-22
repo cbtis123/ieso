@@ -27,10 +27,12 @@ class MateriasController extends Controller
     {
         //Se crea un objeto vacio del modelo materia
         $materia= new Materia;
+        //Mando a llamar las licenciaturas que peretenece esta materia
+        $licenciaturasM = $materia->licenciaturas->pluck('id')->ToArray();
 
         $licenciaturas= Licenciatura::orderBy('nombre','ASC')->pluck('nombre','id');
         //Se manda a llamar la vista create y le pasamos el objeto vacio que creamos con el modelo materia
-        return view('materias.create')->with('materia',$materia)->with('licenciaturas',$licenciaturas);
+        return view('materias.create')->with('materia',$materia)->with('licenciaturas',$licenciaturas)->with('licenciaturasM',$licenciaturasM);
     }
 
     /**
@@ -81,8 +83,10 @@ class MateriasController extends Controller
         $licenciaturas= Licenciatura::orderBy('nombre','ASC')->pluck('nombre','id');
         //Buscamos la materia que queremos modificar con el modelo materia y con el parametro ID que rescibimos
         $materia = materia::find($id);
+        //Mando a llamar las licenciaturas que peretenece esta materia
+        $licenciaturasM = $materia->licenciaturas->pluck('id')->ToArray();
         //Mandamos a llamar la vista edit y le mandamos la materia que extragimos de la base mediante el model materia
-        return view('materias.edit')->with('materia',$materia)->with('licenciaturas',$licenciaturas);
+        return view('materias.edit')->with('materia',$materia)->with('licenciaturas',$licenciaturas)->with('licenciaturasM',$licenciaturasM);
     }
 
     /**
@@ -105,6 +109,8 @@ class MateriasController extends Controller
         $materia->fill($request->all());
         //Guardamos la materia con los campos ya modificados
         $materia->save();
+        //
+        $materia->licenciaturas()->sync($request->licenciatura_id);
         //mostramos un mensaje de registro exitoso
         flash('Se ha actualizado la Materia '.$materia->nombre.' con exito!!','success');
         //Redireccionamos al index

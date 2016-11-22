@@ -10,6 +10,7 @@
           <td>Licenciatura</td>
           <td>Cuatrimestre</td>
           <td>Turno</td>
+          <td>Horario</td>
           <td>Editar</td>
           <td>Eliminar</td>
 
@@ -23,6 +24,9 @@
             <td>{{$grupo->licenciatura->nombre}}</td>
             <td>{{$grupo->cuatrimestre}}</td>
             <td>{{$grupo->turno}}</td>
+             <td>
+              <a href="{{route('horarios.asignar',$grupo)}}" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> </a>
+            </td>
             <td>
               <a href="{{route('grupos.edit',$grupo)}}" class="btn btn-warning"><span class="glyphicon glyphicon-wrench"></span> </a>
             </td>

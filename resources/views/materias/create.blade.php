@@ -4,4 +4,11 @@
   <div class='container'>
     @include('materias.global',['ruta'=>'materias.store','accion'=>'POST','materia'=>$materia])
   </div>
-@endsection('content')
+@endsection
+@section('chosen')
+	<script>
+    	$(".select-licenciatura").chosen({
+    	});
+
+ 	</script>
+@endsection

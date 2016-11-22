@@ -5,3 +5,10 @@
  @include('materias.global',['ruta'=>['materias.update',$materia],'accion'=>'PUT','materia'=>$materia])
   </div>
 @endsection
+@section('chosen')
+	<script>
+    	$(".select-licenciatura").chosen({
+    	});
+
+ 	</script>
+@endsection

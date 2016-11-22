@@ -10,7 +10,7 @@ class Materia extends Model
 	protected $table= 'materias';
     /*Declarocion de los datos que se pueden editar
     */
-    protected $fillable=['nombre'];
+    protected $fillable=['nombre','cuatrimestre'];
 
     //Se de clara relacion muchos a muchos con materias, llamando al modelo Materia 
      

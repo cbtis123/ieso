@@ -8,6 +8,7 @@ use App\Aula;
 use App\Grupo;
 use App\Materia;
 use App\Profesor;
+use App\Licenciatura;
 use App\Http\Requests;
 use App\Http\Requests\HorarioRequest;
 
@@ -36,6 +37,19 @@ class HorariosController extends Controller
         $aulas=Aula::orderBy('nombre','ASC')->pluck('nombre','id');
         $materias=Materia::orderBy('nombre','ASC')->pluck('nombre', 'id');
         $grupos=Grupo::orderBy('nombre','ASC')->pluck('nombre','id');
+        //Se manda a llamar la vista create y le pasamos el objeto vacio que creamos con el modelo horario
+        return view('horarios.create')->with('horario',$horario)->with('aula',$aulas)->with('grupo',$grupos)->with('materia',$materias)->with('profesor',$profesores);
+    }
+
+    public function asignar($idg){
+        //Se crea un objeto vacio del modelo horario
+        $horario= new Horario;
+        $grupo = Grupo::find($idg);
+        $licenciatura = Licenciatura::find($grupo->licenciatura_id);
+        $materias = $licenciatura->materias->where('cuatrimestre','=',"$grupo->cuatrimestre")->pluck('nombre','id');
+        $grupos=$grupo->where('id','=',"$idg")->pluck('nombre','id');
+        $profesores=Profesor::orderBy('nombre','ASC')->pluck('nombre','id');
+        $aulas=Aula::orderBy('nombre','ASC')->pluck('nombre','id');
         //Se manda a llamar la vista create y le pasamos el objeto vacio que creamos con el modelo horario
         return view('horarios.create')->with('horario',$horario)->with('aula',$aulas)->with('grupo',$grupos)->with('materia',$materias)->with('profesor',$profesores);
     }

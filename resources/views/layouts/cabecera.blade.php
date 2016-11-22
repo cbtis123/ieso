@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/ieso.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('bower_components/DataTables/media/css/jquery.dataTables.min.css') }}">
 	<link href="{{ asset('font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ asset('chosen/chosen.css') }}" rel="stylesheet" type="text/css">
 	
 		<title>@yield('title', '') | Panel de Administracion\</title>
 	</head>
@@ -67,13 +68,14 @@
 		</div>
 	</body>
 	<script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
-	<script src="{{ asset('js/ieso.js') }}"></script>
 	<script src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 	<script src="{{ asset('bower_components/DataTables/media/js/jquery.dataTables.min.js') }}"></script>
-	<script>
-  $(document).ready(function(){
-      $('#mi_tabla').DataTable();
-  });
-</script>
+		<script>
+		  $(document).ready(function(){
+		      $('#mi_tabla').DataTable();
+		  });
+		</script>
+	<script src="{{ asset('chosen/chosen.jquery.js') }}"></script>
+	@yield('chosen')
 
 </html>

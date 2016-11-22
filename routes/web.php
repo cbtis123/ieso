@@ -40,6 +40,10 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::group(['middleware' => ['profesor']], function () {
 		Route::resource('calificaciones','CalificacionesController');
 		Route::resource('horarios','HorariosController');
+		Route::get('horarios/{idg}/asignar',[
+		'uses' => 'HorariosController@asignar',
+		'as' => 'horarios.asignar'
+		]);
 	});
 });
 

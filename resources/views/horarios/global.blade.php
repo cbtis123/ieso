@@ -12,7 +12,7 @@
    <div class='form-group row'>
       {!!Form::label('grupo','Grupo',['class'=>'control-label col-xs-12 col-md-1'])!!}
       <div class="col-xs-12 col-md-10">
-         {!!Form::select('grupo_id',$grupo,null,['class'=>'form-control select-category','placeholder'=>''])!!}
+         {!!Form::select('grupo_id',$grupo,$grupo,['class'=>'form-control select-category','disabled'])!!}
       </div>
    </div>
 @endif

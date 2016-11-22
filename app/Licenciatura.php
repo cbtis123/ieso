@@ -18,7 +18,7 @@ class Licenciatura extends Model
 
      //Se declara la relacion muchos a muchos con materias "Una especialidad puede tener muchas materias"
      public function materias(){
-     	return $this->belongsToMany('App\Materia','especialidad_materia');
+     	return $this->belongsToMany('App\Materia');
      }
 
      //Se declara la relacion uno a muchos "Una especialidad puede tener muchos alumnos"
@@ -32,4 +32,8 @@ class Licenciatura extends Model
      public function grupos(){
         return $this->hasMany('App\Grupo');
      }
+
+      public  function MateriaGrupo($id,$cuatrimestre){
+        
+    } 
 }
