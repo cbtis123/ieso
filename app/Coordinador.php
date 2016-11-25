@@ -16,7 +16,7 @@ class Coordinador extends Model
     */
 
     //Se declara relacion uno a uno con Licenciatura "Un coordinador solo puede tener una licenciatura"
-    public function licenciatura(){
+    public function licenciaturas(){
         return $this->hasMany('App\Licenciatura');
     }
 

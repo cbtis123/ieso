@@ -129,7 +129,6 @@ $factory->define(Coordinador::class, function(Generator $faker){
             'cp' => $faker->numberBetween($min = 60000, $max = 70000),
             'telefono_c' =>$faker->tollFreePhoneNumber ,
             'celular' => $faker->tollFreePhoneNumber,
-            'licenciatura_id'=>$faker->numberBetween($min = 1, $max = 8),
 						'user_id'=> $faker->numberBetween($min = 8, $max = 12),
             ];
 

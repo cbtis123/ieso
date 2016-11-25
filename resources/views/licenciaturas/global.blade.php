@@ -10,14 +10,14 @@
    <div class='form-group row'>
       {!!Form::label('Coordinador','coordinador',['class'=>'control-label col-xs-12 col-md-1'])!!}
       <div class="col-xs-12 col-md-10">
-         {!!Form::select('licenciatura_id',$coordinadores,$licenciatura->coordinador->id,['class'=>'form-control select-query'])!!}
+         {!!Form::select('coordinador_id',$coordinadores,$licenciatura->coordinador->id,['class'=>'form-control select-query'])!!}
       </div>
    </div>
 @else
    <div class='form-group row'>
       {!!Form::label('coortinador','Coordinador',['class'=>'control-label col-xs-12 col-md-1'])!!}
       <div class="col-xs-12 col-md-10">
-         {!!Form::select('coordinador_id',$coordinadores,null,['class'=>'form-control select-query','placeholder'=>'Elige Licenciatura..'])!!}
+         {!!Form::select('coordinador_id',$coordinadores,null,['class'=>'form-control select-query','placeholder'=>'Elige Coordinador..'])!!}
       </div>
    </div>
 @endif

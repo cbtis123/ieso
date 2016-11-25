@@ -12,7 +12,7 @@
    <div class='form-group row'>
       {!!Form::label('grupo','Grupo',['class'=>'control-label col-xs-12 col-md-1'])!!}
       <div class="col-xs-12 col-md-10">
-         {!!Form::select('grupo_id',$grupo,$grupo,['class'=>'form-control select-category','disabled'])!!}
+         {!!Form::select('grupo_id',$grupo,$grupo,['class'=>'form-control select-category'])!!}
       </div>
    </div>
 @endif
@@ -72,7 +72,7 @@
 
 <div class='form-group row'>
    {!!Form::label('lunes','Lunes',['class'=>'control-label col-xs-1'])!!}
-   
+
    <div class="col-xs-2">
       {!!Form::select('lunes_i',[
          '7:00:00'=>'7:00',
@@ -95,11 +95,11 @@
          '20:20:00'=>'20:20'],
          $horario->lunes_i,
          ['class'=>'form-control','placeholder'=>'Hora de inicio'])!!}
-         
+
    </div>
-   
-   <div class="col-xs-2">  
-         
+
+   <div class="col-xs-2">
+
       {!!Form::select('lunes_f',[
          '7:00:00'=>'7:00',
          '7:50:00'=>'7:50',
@@ -125,7 +125,7 @@
 
 <div class='form-group row'>
    {!!Form::label('martes','Martes',['class'=>'control-label col-xs-1'])!!}
-   
+
    <div class="col-xs-2">
       {!!Form::select('martes_i',[
          '7:00:00'=>'7:00',
@@ -148,11 +148,11 @@
          '20:20:00'=>'20:20'],
          $horario->martes_i,
          ['class'=>'form-control','placeholder'=>'Hora de inicio'])!!}
-         
+
    </div>
-   
-   <div class="col-xs-2">  
-         
+
+   <div class="col-xs-2">
+
       {!!Form::select('martes_f',[
          '7:00:00'=>'7:00',
          '7:50:00'=>'7:50',
@@ -178,7 +178,7 @@
 
 <div class='form-group row'>
    {!!Form::label('miercoles','Miercoles',['class'=>'control-label col-xs-1'])!!}
-   
+
    <div class="col-xs-2">
       {!!Form::select('miercoles_i',[
          '7:00:00'=>'7:00',
@@ -201,11 +201,11 @@
          '20:20:00'=>'20:20'],
          $horario->miercoles_i,
          ['class'=>'form-control','placeholder'=>'Hora de inicio'])!!}
-         
+
    </div>
-   
-   <div class="col-xs-2">  
-         
+
+   <div class="col-xs-2">
+
       {!!Form::select('miercoles_f',[
          '7:00:00'=>'7:00',
          '7:50:00'=>'7:50',
@@ -231,7 +231,7 @@
 
 <div class='form-group row'>
    {!!Form::label('jueves','Jueves',['class'=>'control-label col-xs-1'])!!}
-   
+
    <div class="col-xs-2">
       {!!Form::select('jueves_i',[
          '7:00:00'=>'7:00',
@@ -254,11 +254,11 @@
          '20:20:00'=>'20:20'],
          $horario->jueves_i,
          ['class'=>'form-control','placeholder'=>'Hora de inicio'])!!}
-         
+
    </div>
-   
-   <div class="col-xs-2">  
-         
+
+   <div class="col-xs-2">
+
       {!!Form::select('jueves_f',[
          '7:00:00'=>'7:00',
          '7:50:00'=>'7:50',
@@ -284,7 +284,7 @@
 
 <div class='form-group row'>
    {!!Form::label('viernes','Viernes',['class'=>'control-label col-xs-1'])!!}
-   
+
    <div class="col-xs-2">
       {!!Form::select('viernes_i',[
          '7:00:00'=>'7:00',
@@ -307,11 +307,11 @@
          '20:20:00'=>'20:20'],
          $horario->viernes_i,
          ['class'=>'form-control','placeholder'=>'Hora de inicio'])!!}
-         
+
    </div>
-   
-   <div class="col-xs-2">  
-         
+
+   <div class="col-xs-2">
+
       {!!Form::select('viernes_f',[
          '7:00:00'=>'7:00',
          '7:50:00'=>'7:50',

@@ -77,7 +77,7 @@ class LicenciaturasController extends Controller
      */
     public function edit($id)
     {
-        $coordinadores= Cooridinador::orderBy('nombre','ASC')->pluck('nombre','id');
+        $coordinadores= Coordinador::orderBy('nombre','ASC')->pluck('nombre','id');
         //Buscamos la licenciatura que queremos modificar con el modelo Licenciatura y con el parametro ID que rescibimos
         $licenciatura = Licenciatura::find($id);
         //Mandamos a llamar la vista edit y le mandamos la licenciatura que extragimos de la base mediante el model Licenciatura

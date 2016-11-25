@@ -17,7 +17,13 @@
         @foreach ($licenciaturas as $licenciatura)
           <tr>
             <td>{{$licenciatura->nombre}}</td>
-            <td>{{$licenciatura->coordinador}}</td>
+            @if($licenciatura->coordinador)
+                <td>{{$licenciatura->coordinador->nombre}}</td>
+
+          @else
+            <td></td>
+
+        @endif
             <td>
               <a href="{{route('licenciaturas.edit',$licenciatura)}}" class="btn btn-warning"><span class="glyphicon glyphicon-wrench"></span> </a>
             </td>

@@ -10,9 +10,13 @@
 		</div>
 
 		<div class="collapse navbar-collapse" id="navbar1">
+				<ul class="nav navbar-nav">
+					@if(Auth::guest())
 
-			<ul class="nav navbar-nav">
-			  <li><a href="{{ url('/alumnos') }}"><i class="fa fa-graduation-cap"></i> Alumnos</a></li>
+								@else
+									@if (Auth::user()->type =='Coordinador' or Auth::user()->type =='admin')
+						<li><a href="{{ url('/alumnos') }}"><i class="fa fa-graduation-cap"></i> Alumnos</a></li>
+					@endif
 			  <li><a href="{{ url('/profesores') }}"><i class="fa fa-users" aria-hidden="true"></i> Profesores</a></li>
 			  <li class="dropdown">
 			  <a href="#" class="drop-toggle" data-toggle="dropdown"><i class="fa fa-book" aria-hidden="true"></i> Academico <span class="caret"></span>	</a>
@@ -23,12 +27,12 @@
 				  	<li><a href="{{ url('/licenciaturas') }}"><i class="fa fa-book" aria-hidden="true"></i> Licenciaturas</a></li>
 				  	<li><a href="{{ url('/grupos') }}"><i class="fa fa-book" aria-hidden="true"></i> Grupos</a></li>
 				  </ul>
-				</li>	
+				</li>
 
 			  <li><a href="{{ url('/tutores') }}"><i class="fa fa-users" aria-hidden="true"></i> Tutores</a></li>
 				<li><a href="{{ url('/coordinadores') }}"><i class="fa fa-hand-paper-o" aria-hidden="true"></i>Coordinadores</a></li>
 
-
+@endif
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
                     <li><a href="{{ url('/usuarios') }}">Usuarios</a></li>

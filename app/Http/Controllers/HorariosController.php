@@ -62,14 +62,17 @@ class HorariosController extends Controller
      */
     public function store(HorarioRequest $request)
     {
+
         //Creamos un prodcuto nuevo con el modelo horario y lo rellenamos con los datos que ingresa el usuario
         $horario = new Horario($request->all());
         //Mandamos a guaradar la nueva horario creada
+        //dd($horario->grupo_id);
         $horario->save();
         //mandamos un mensaje de registro exitoso
         flash('Se ha registrado el Horario '.$horario->id.' con exito!!','success');
         //Redireccionamos al index
-        return redirect()->route('horarios.index');
+        //return redirect()->route('horarios.index');
+        return redirect()->route('horarios.show',$horario->grupo_id);
     }
 
     /**
@@ -79,7 +82,7 @@ class HorariosController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {   
+    {
         $grupo= Grupo::find($id);
         ////Se manda a llamar todas las horarios que existen en la tabla 'horarios' mediante el modelo horario
         $horarios= Horario::GrupoHorario($id);
@@ -122,7 +125,7 @@ class HorariosController extends Controller
         $horario->save();
         //Redireccionamos al index
         flash('Se ha actualizado el Horario '.$horario->id.' con exito!!','success');
-        return redirect()->route('horarios.index');
+        return redirect()->route('horarios.show',$horario->grupo_id);
     }
 
     /**
